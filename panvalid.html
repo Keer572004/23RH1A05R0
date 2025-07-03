@@ -1,7 +1,7 @@
 <html>
     <body>
-        <input type="text" id="pan" placeholder="Enter pan number(ABCDE1234F)">
-        <p id="message"></p>
+        <input type="text" id="pan" placeholder="Enter pan number(ABCD1234F)">
+        <P id="message"></P>
         <script>
             let pan=document.getElementById("pan");
             pan.addEventListener("input",function(){
@@ -10,8 +10,8 @@
                 if(panregex.test(str)){
                     document.getElementById("message").innerHTML="Valid pan";
                     document.getElementById("message").style="color:green";
-                }else{
-                    document.getElementById("message").innerHTML="InValid pan";
+                } else {
+                    document.getElementById("message").innerHTML="Invalid pan";
                     document.getElementById("message").style="color:red";
                 }
             })

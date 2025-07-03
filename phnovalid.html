@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <input type="text" id="phnno placeholder=Enter phone number (123457890)">
+        <p id="message"></p>
+        <script>
+            let phnno = document.getElementById("phnno");
+            phnno.addEventListener("input", function () {
+                const phnregex = /^[0-9]{10}$/;
+                const value = phnno.value;
+                if (phnnregex.test(value)){
+                    document.getElementById("message").innerHTML = "Valid number";
+                    document.getElementById("message").style.color = "green";
+                } else {
+                    document.getElementById("message").innerHTML = "Invalid phone number";
+                    document.getElementById("message").style.color = "red";
+                }
+            });
+        </script>
+    </body>
+</html>
